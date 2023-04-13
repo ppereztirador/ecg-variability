@@ -8,12 +8,14 @@ All files are given in CSV format separated by tabs (`\t`). The files are divide
 
 * *ecg_10bit*: contains data acquired at 10 bit resolution for two scenarios:
 	* *rest_10bit*: volunteer at rest, clean ECG
-	* *noisy_10_bit*: volunteer moving, noisy ECG
+	* *noisy_10bit*: volunteer moving, noisy ECG
 * *ecg_16_bit*: contains data acquired at 10 bit resolution for four scenarios:
 	* *good_16bit*: volunteer lying down, clean ECG
 	* *average_16bit*: volunteer at rest, mostly clean ECG with some noise
 	* *noisy_16bit*: volunteer moving around, ECG with some noise
 	* *verynoisy_16bit*: volunteer moving around and using the stairs, ECG with noise, some segments clip at zero or maximum values
 * *ecg_extra*: other ECGs recorded with 16 bit resolution
+
+Additionally some Python files are supplied to convert the data into NumPy arrays and filter saturating values.
 
 ## 3. License
